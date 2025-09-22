@@ -1,0 +1,217 @@
+'use client';
+
+import { useState } from 'react';
+import { ArrowLeft, Edit, Star, MapPin, Users, TrendingUp, Instagram, Youtube, Twitter, Heart, MessageCircle } from 'lucide-react';
+import { mockInfluencers } from '@/lib/mockData';
+
+export default function ProfilePage() {
+  const [isEditing, setIsEditing] = useState(false);
+  const influencer = mockInfluencers[0]; // Sarah Johnson
+
+  const totalFollowers = Object.values(influencer.followers).reduce((sum, count) => sum + (count || 0), 0);
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <header className="bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center py-6">
+            <button 
+              onClick={() => window.history.back()}
+              className="mr-4 p-2 hover:bg-gray-100 rounded-lg"
+            >
+              <ArrowLeft className="h-5 w-5" />
+            </button>
+            <div className="flex items-center">
+              <TrendingUp className="h-8 w-8 text-primary-600" />
+              <span className="ml-2 text-2xl font-bold text-gray-900">InfluenceHub</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Profile Header */}
+        <div className="card mb-8">
+          <div className="flex items-start justify-between mb-6">
+            <div className="flex items-center space-x-6">
+              <img
+                src={influencer.avatar}
+                alt={influencer.name}
+                className="w-24 h-24 rounded-full object-cover"
+              />
+              <div>
+                <div className="flex items-center space-x-2 mb-2">
+                  <h1 className="text-2xl font-bold text-gray-900">{influencer.name}</h1>
+                  {influencer.verified && (
+                    <Star className="h-6 w-6 text-blue-500" />
+                  )}
+                </div>
+                <div className="flex items-center text-gray-600 mb-2">
+                  <MapPin className="h-4 w-4 mr-1" />
+                  {influencer.location}
+                </div>
+                <div className="flex items-center text-gray-600">
+                  <Users className="h-4 w-4 mr-1" />
+                  {totalFollowers.toLocaleString()} total followers
+                </div>
+              </div>
+            </div>
+            <button
+              onClick={() => setIsEditing(!isEditing)}
+              className="btn-secondary"
+            >
+              <Edit className="h-4 w-4 mr-2" />
+              {isEditing ? 'Save Changes' : 'Edit Profile'}
+            </button>
+          </div>
+
+          <p className="text-gray-700 text-lg leading-relaxed">{influencer.bio}</p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* Main Content */}
+          <div className="lg:col-span-2 space-y-8">
+            {/* Social Media Stats */}
+            <div className="card">
+              <h2 className="text-xl font-semibold text-gray-900 mb-6">Social Media Presence</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {Object.entries(influencer.followers).map(([platform, count]) => {
+                  if (!count) return null;
+                  
+                  const platformIcons = {
+                    instagram: Instagram,
+                    youtube: Youtube,
+                    twitter: Twitter
+                  };
+                  
+                  const Icon = platformIcons[platform as keyof typeof platformIcons];
+                  
+                  return (
+                    <div key={platform} className="flex items-center space-x-4 p-4 border border-gray-200 rounded-lg">
+                      <div className="p-3 bg-gray-100 rounded-lg">
+                        <Icon className="h-6 w-6 text-gray-700" />
+                      </div>
+                      <div>
+                        <h3 className="font-medium text-gray-900 capitalize">{platform}</h3>
+                        <p className="text-2xl font-bold text-primary-600">{count.toLocaleString()}</p>
+                        <p className="text-sm text-gray-500">followers</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Portfolio */}
+            <div className="card">
+              <h2 className="text-xl font-semibold text-gray-900 mb-6">Portfolio</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {influencer.portfolio.map(item => (
+                  <div key={item.id} className="border border-gray-200 rounded-lg overflow-hidden">
+                    <img
+                      src={item.imageUrl}
+                      alt={item.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="font-medium text-gray-900 mb-2">{item.title}</h3>
+                      <p className="text-gray-600 text-sm mb-3">{item.description}</p>
+                      <div className="flex justify-between text-sm text-gray-500">
+                        <span>{item.metrics.likes.toLocaleString()} likes</span>
+                        <span>{item.metrics.comments.toLocaleString()} comments</span>
+                        <span>{item.metrics.shares.toLocaleString()} shares</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Sidebar */}
+          <div className="space-y-6">
+            {/* Quick Stats */}
+            <div className="card">
+              <h3 className="font-semibold text-gray-900 mb-4">Quick Stats</h3>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Engagement Rate</span>
+                  <span className="font-medium">{influencer.engagementRate}%</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Price Range</span>
+                  <span className="font-medium">
+                    ${influencer.priceRange.min.toLocaleString()}-${influencer.priceRange.max.toLocaleString()}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Categories</span>
+                  <span className="font-medium">{influencer.categories.length}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Categories */}
+            <div className="card">
+              <h3 className="font-semibold text-gray-900 mb-4">Content Categories</h3>
+              <div className="flex flex-wrap gap-2">
+                {influencer.categories.map(category => (
+                  <span
+                    key={category}
+                    className="px-3 py-1 bg-primary-100 text-primary-700 text-sm rounded-full"
+                  >
+                    {category}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Contact Actions */}
+            <div className="card">
+              <h3 className="font-semibold text-gray-900 mb-4">Connect</h3>
+              <div className="space-y-3">
+                <button className="w-full btn-primary">
+                  <MessageCircle className="h-4 w-4 mr-2" />
+                  Send Message
+                </button>
+                <button className="w-full btn-secondary">
+                  <Heart className="h-4 w-4 mr-2" />
+                  Save to Favorites
+                </button>
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="card">
+              <h3 className="font-semibold text-gray-900 mb-4">Social Links</h3>
+              <div className="space-y-2">
+                {Object.entries(influencer.socialMedia).map(([platform, handle]) => {
+                  if (!handle) return null;
+                  
+                  const platformIcons = {
+                    instagram: Instagram,
+                    youtube: Youtube,
+                    twitter: Twitter
+                  };
+                  
+                  const Icon = platformIcons[platform as keyof typeof platformIcons];
+                  
+                  return (
+                    <a
+                      key={platform}
+                      href="#"
+                      className="flex items-center space-x-2 text-gray-600 hover:text-primary-600 transition-colors"
+                    >
+                      <Icon className="h-4 w-4" />
+                      <span className="text-sm">{handle}</span>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}
