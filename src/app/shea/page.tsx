@@ -158,7 +158,7 @@ export default function SheaDashboard() {
                   <div className="space-y-2 mb-3">
                     <div className="flex justify-between text-sm">
                       <span className="text-gray-500">Followers:</span>
-                      <span className="font-medium">{Object.values(influencer.followers).reduce((sum, count) => sum + (count || 0), 0).toLocaleString()}</span>
+                      <span className="font-medium">{(influencer.followers.instagram || 0) + (influencer.followers.tiktok || 0) + (influencer.followers.youtube || 0) + (influencer.followers.twitter || 0)}</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-gray-500">Engagement:</span>
@@ -171,10 +171,10 @@ export default function SheaDashboard() {
                   </div>
                   
                   <div className="flex flex-wrap gap-1 mb-3">
-                    {influencer.categories.map(category => (
+                    {influencer.categories.map((category: string) => (
                       <span
                         key={category}
-                        className="px-2 py-1 bg-primary-100 text-primary-700 text-xs rounded-full"
+                        className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
                       >
                         {category}
                       </span>

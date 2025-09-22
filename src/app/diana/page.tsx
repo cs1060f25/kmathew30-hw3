@@ -143,7 +143,7 @@ export default function DianaDashboard() {
                           </div>
                           <div className="flex items-center space-x-1">
                             <Users className="h-4 w-4" />
-                            <span>{campaign.requirements.followerRange.min.toLocaleString()}-{campaign.requirements.followerRange.max.toLocaleString()} followers</span>
+                            <span>{campaign.requirements.followerRange?.min.toLocaleString() || '0'}-{campaign.requirements.followerRange?.max.toLocaleString() || '0'} followers</span>
                           </div>
                         </div>
                       </div>

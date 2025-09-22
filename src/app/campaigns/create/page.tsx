@@ -80,7 +80,7 @@ export default function CreateCampaignPage() {
               <ArrowLeft className="h-5 w-5" />
             </button>
             <div className="flex items-center">
-              <TrendingUp className="h-8 w-8 text-primary-600" />
+              <TrendingUp className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
           </div>

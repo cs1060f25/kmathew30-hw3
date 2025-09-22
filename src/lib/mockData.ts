@@ -626,6 +626,7 @@ export const mockCampaigns: Campaign[] = [
     title: 'TechCorp Smartphone Launch',
     description: 'Promote our latest smartphone with focus on camera features and battery life.',
     brandId: 'b1',
+    brandName: 'TechCorp',
     budget: 50000,
     requirements: {
       platforms: ['instagram', 'youtube', 'tiktok'],
@@ -643,6 +644,7 @@ export const mockCampaigns: Campaign[] = [
     title: 'EcoFashion Spring Collection',
     description: 'Showcase our sustainable spring collection with focus on eco-friendly materials.',
     brandId: 'b2',
+    brandName: 'EcoFashion',
     budget: 30000,
     requirements: {
       platforms: ['instagram', 'tiktok'],
@@ -660,6 +662,7 @@ export const mockCampaigns: Campaign[] = [
     title: 'FitLife Protein Powder Campaign',
     description: 'Promote our new plant-based protein powder with workout content.',
     brandId: 'b3',
+    brandName: 'FitLife Supplements',
     budget: 25000,
     requirements: {
       platforms: ['instagram', 'youtube', 'tiktok'],
@@ -677,6 +680,7 @@ export const mockCampaigns: Campaign[] = [
     title: 'FlexiYoga Apparel Collection',
     description: 'Showcase our new yoga apparel line in home workout content. Perfect for micro-influencers who focus on accessible fitness.',
     brandId: 'b2',
+    brandName: 'EcoFashion',
     budget: 5000,
     requirements: {
       platforms: ['instagram', 'tiktok'],
@@ -695,6 +699,7 @@ export const mockCampaigns: Campaign[] = [
     title: 'NutriBoost Protein Shake Launch',
     description: 'Create authentic content featuring our new protein shake in your daily routine and workout posts.',
     brandId: 'b3',
+    brandName: 'FitLife Supplements',
     budget: 3000,
     requirements: {
       platforms: ['instagram'],
@@ -713,6 +718,7 @@ export const mockCampaigns: Campaign[] = [
     title: 'Wellness App Ambassador Program',
     description: '3-month ambassador program for fitness influencers. Monthly posts about healthy lifestyle tips and app features.',
     brandId: 'b1',
+    brandName: 'TechCorp',
     budget: 1500,
     requirements: {
       platforms: ['instagram', 'tiktok'],
@@ -733,6 +739,7 @@ export const mockCampaigns: Campaign[] = [
     title: "Shea's Coffee Store Local Marketing",
     description: 'Promote our local Boston coffee shop to young adults who love coffee and day-in-the-life content. Perfect for micro-influencers in the Boston area.',
     brandId: 'b4',
+    brandName: "Shea's Coffee Store",
     budget: 1500,
     requirements: {
       platforms: ['instagram', 'tiktok'],

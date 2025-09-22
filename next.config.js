@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  // Standard Next.js configuration for Netlify deployment
 }
 
 module.exports = nextConfig

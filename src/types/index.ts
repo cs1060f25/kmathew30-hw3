@@ -70,15 +70,22 @@ export interface Campaign {
   title: string;
   description: string;
   brandId: string;
+  brandName: string;
   budget: number;
   requirements: {
     platforms: string[];
-    categories: string[];
-    followerRange: {
+    deliverables?: string[];
+    timeline?: string;
+    audience?: {
+      age: string[];
+      interests: string[];
+    };
+    categories?: string[];
+    followerRange?: {
       min: number;
       max: number;
     };
-    engagementRate: number;
+    engagementRate?: number;
   };
   status: 'draft' | 'active' | 'completed' | 'cancelled';
   applications: CampaignApplication[];
