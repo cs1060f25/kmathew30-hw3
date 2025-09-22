@@ -1,4 +1,4 @@
-# InfluenceHub - Influencer Marketing Platform
+# Brandley.ai - Influencer Marketing Platform
 
 A modern 2-sided platform that connects brands with influencers for authentic marketing partnerships.
 

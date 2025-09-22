@@ -13,7 +13,7 @@ export default function DemoPage() {
       content: (
         <div className="space-y-4">
           <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-            <h4 className="font-medium text-red-800 mb-2">Before InfluenceHub:</h4>
+            <h4 className="font-medium text-red-800 mb-2">Before Brandley.ai:</h4>
             <ul className="text-sm text-red-700 space-y-1">
               <li>• Sporadic brand deals with delayed payments</li>
               <li>• Hours spent on outreach via DMs</li>
@@ -206,7 +206,7 @@ export default function DemoPage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
             <h4 className="font-medium text-green-800 mb-2">Diana's Success:</h4>
             <p className="text-sm text-green-700">
-              "InfluenceHub transformed my fragmented influencer experience into a structured, rewarding business. 
+              "Brandley.ai transformed my fragmented influencer experience into a structured, rewarding business. 
               I can focus on creating authentic content while the platform handles the business side. 
               My income is now stable and growing!"
             </p>
@@ -229,7 +229,7 @@ export default function DemoPage() {
             </button>
             <div className="flex items-center">
               <TrendingUp className="h-8 w-8 text-primary-600" />
-              <span className="ml-2 text-2xl font-bold text-gray-900">InfluenceHub</span>
+              <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
           </div>
         </div>
@@ -237,7 +237,7 @@ export default function DemoPage() {
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Diana's Journey with InfluenceHub</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">Diana's Journey with Brandley.ai</h1>
           <p className="text-gray-600">See how our platform transforms micro-influencer challenges into sustainable success</p>
         </div>
 

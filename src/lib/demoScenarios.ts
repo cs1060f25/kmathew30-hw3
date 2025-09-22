@@ -2,14 +2,14 @@
 
 export const demoScenarios = {
   brand: {
-    name: "TechCorp",
-    user: "John Smith",
-    scenario: "TechCorp is launching a new smartphone and wants to partner with tech influencers to create authentic reviews and unboxing content. They have a budget of $50,000 and are looking for influencers with 50K-500K followers who specialize in technology content."
+    name: "Shea's Coffee Store",
+    user: "Shea Mathew",
+    scenario: "Shea's Coffee Store is a local Boston coffee shop looking to increase foot traffic and brand awareness. They have a $5,000 budget and want to partner with local micro-influencers who create day-in-the-life content and love coffee. Perfect for Brandley.ai's AI matching system."
   },
   influencer: {
-    name: "Sarah Johnson",
-    user: "Sarah Johnson", 
-    scenario: "Sarah is a lifestyle and fashion influencer with 125K Instagram followers and 89K TikTok followers. She's passionate about sustainable living and wants to partner with eco-friendly brands. Her engagement rate is 4.2% and she charges $500-$2,000 per post."
+    name: "Diana Ramirez",
+    user: "Diana Ramirez", 
+    scenario: "Diana is a micro-influencer with 25K Instagram followers specializing in fitness and wellness content. She's struggling with inconsistent income and wants to find authentic brand partnerships. Brandley.ai's AI matching helps her find perfect campaigns and secure timely payments."
   }
 };
 

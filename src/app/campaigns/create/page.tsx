@@ -81,7 +81,7 @@ export default function CreateCampaignPage() {
             </button>
             <div className="flex items-center">
               <TrendingUp className="h-8 w-8 text-primary-600" />
-              <span className="ml-2 text-2xl font-bold text-gray-900">InfluenceHub</span>
+              <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
           </div>
         </div>

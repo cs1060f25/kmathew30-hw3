@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'InfluenceHub - Connect Brands with Influencers',
+  title: 'Brandley.ai - Connect Brands with Influencers',
   description: 'A platform where brands and influencers can connect for authentic marketing partnerships',
 }
 

@@ -22,7 +22,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
               <TrendingUp className="h-8 w-8 text-primary-600" />
-              <span className="ml-2 text-2xl font-bold text-gray-900">InfluenceHub</span>
+              <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>
@@ -102,7 +102,7 @@ export default function HomePage() {
 
           {/* Features */}
           <div id="features" className="mt-20">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12">Why Choose InfluenceHub?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-12">Why Choose Brandley.ai?</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -150,7 +150,7 @@ function BrandDashboard() {
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
               <TrendingUp className="h-8 w-8 text-primary-600" />
-              <span className="ml-2 text-2xl font-bold text-gray-900">InfluenceHub</span>
+              <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
             <div className="flex items-center space-x-4">
               <span className="text-gray-600">Welcome, Shea's Coffee Store</span>
@@ -255,7 +255,7 @@ function InfluencerDashboard() {
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
               <TrendingUp className="h-8 w-8 text-primary-600" />
-              <span className="ml-2 text-2xl font-bold text-gray-900">InfluenceHub</span>
+              <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
             <div className="flex items-center space-x-4">
               <span className="text-gray-600">Welcome, Sarah Johnson</span>
