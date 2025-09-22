@@ -15,13 +15,13 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
-              <TrendingUp className="h-8 w-8 text-primary-600" />
+              <TrendingUp className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -38,7 +38,7 @@ export default function HomePage() {
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Connect Brands with
-            <span className="text-primary-600"> Influencers</span>
+            <span className="text-blue-600"> Influencers</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             The ultimate platform for authentic influencer marketing. Brands discover perfect creators, 
@@ -53,7 +53,7 @@ export default function HomePage() {
                 onClick={() => setUserType('brand')}
                 className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-transparent hover:border-primary-200 group"
               >
-                <User className="h-12 w-12 text-primary-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <User className="h-12 w-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">I'm a Brand</h3>
                 <p className="text-gray-600">
                   Find and collaborate with influencers to promote your products and services.
@@ -64,7 +64,7 @@ export default function HomePage() {
                 onClick={() => setUserType('influencer')}
                 className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-transparent hover:border-primary-200 group"
               >
-                <Users className="h-12 w-12 text-primary-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <Users className="h-12 w-12 text-blue-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">I'm an Influencer</h3>
                 <p className="text-gray-600">
                   Connect with brands and monetize your content through authentic partnerships.
@@ -105,8 +105,8 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-12">Why Choose Brandley.ai?</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Star className="h-8 w-8 text-primary-600" />
+                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Star className="h-8 w-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Verified Creators</h3>
                 <p className="text-gray-600">
@@ -115,8 +115,8 @@ export default function HomePage() {
               </div>
               
               <div className="text-center">
-                <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="h-8 w-8 text-primary-600" />
+                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="h-8 w-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Smart Matching</h3>
                 <p className="text-gray-600">
@@ -125,8 +125,8 @@ export default function HomePage() {
               </div>
               
               <div className="text-center">
-                <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-primary-600" />
+                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-8 w-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Secure Payments</h3>
                 <p className="text-gray-600">
@@ -149,7 +149,7 @@ function BrandDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
-              <TrendingUp className="h-8 w-8 text-primary-600" />
+              <TrendingUp className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
             <div className="flex items-center space-x-4">
@@ -254,7 +254,7 @@ function InfluencerDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
-              <TrendingUp className="h-8 w-8 text-primary-600" />
+              <TrendingUp className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
             <div className="flex items-center space-x-4">

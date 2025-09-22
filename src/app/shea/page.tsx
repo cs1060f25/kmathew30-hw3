@@ -48,7 +48,7 @@ export default function SheaDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
-              <TrendingUp className="h-8 w-8 text-primary-600" />
+              <TrendingUp className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
             <div className="flex items-center space-x-4">
@@ -78,7 +78,7 @@ export default function SheaDashboard() {
         {/* Natural Language Search */}
         <div className="card mb-8">
           <div className="flex items-center space-x-2 mb-4">
-            <Bot className="h-6 w-6 text-primary-600" />
+            <Bot className="h-6 w-6 text-blue-600" />
             <h2 className="text-xl font-semibold text-gray-900">AI-Powered Influencer Search</h2>
           </div>
           <p className="text-gray-600 mb-4">Describe the type of influencers you want to work with in your own words:</p>

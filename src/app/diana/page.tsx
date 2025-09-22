@@ -30,7 +30,7 @@ export default function DianaDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
-              <TrendingUp className="h-8 w-8 text-primary-600" />
+              <TrendingUp className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-2xl font-bold text-gray-900">Brandley.ai</span>
             </div>
             <div className="flex items-center space-x-4">
@@ -179,7 +179,7 @@ export default function DianaDashboard() {
                     <span className="text-gray-500">Payment: $500 (Escrow Protected)</span>
                     <button 
                       onClick={handlePaymentRelease}
-                      className="text-primary-600 hover:text-primary-700 font-medium"
+                      className="text-blue-600 hover:text-primary-700 font-medium"
                     >
                       Complete & Release Payment
                     </button>
