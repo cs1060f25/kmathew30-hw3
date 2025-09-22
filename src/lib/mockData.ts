@@ -152,6 +152,82 @@ export const mockInfluencers: Influencer[] = [
       }
     ],
     createdAt: new Date('2023-08-15')
+  },
+  {
+    id: '5',
+    email: 'sophia@example.com',
+    name: 'Sophia Chen',
+    type: 'influencer',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face',
+    bio: 'Coffee enthusiast and lifestyle blogger sharing daily routines and local Boston finds. Love discovering hidden gems in the city!',
+    location: 'Boston, MA',
+    socialMedia: {
+      instagram: '@sophia_daily',
+      tiktok: '@sophia_coffee'
+    },
+    followers: {
+      instagram: 18000,
+      tiktok: 12000
+    },
+    engagementRate: 6.2,
+    categories: ['Lifestyle', 'Coffee', 'Local Boston', 'Day in the Life'],
+    priceRange: { min: 150, max: 400 },
+    verified: true,
+    audienceDemographics: {
+      gender: { female: 75, male: 25 },
+      age: { '18-24': 40, '25-34': 50, '35-44': 10 },
+      location: { 'Boston': 60, 'Massachusetts': 25, 'Other': 15 }
+    },
+    portfolio: [
+      {
+        id: 'p6',
+        title: 'Morning Coffee Routine',
+        description: 'Day in the life content featuring local coffee shops',
+        imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop',
+        platform: 'instagram',
+        metrics: { likes: 850, comments: 45, shares: 12 },
+        createdAt: new Date('2024-01-19')
+      }
+    ],
+    createdAt: new Date('2023-09-01')
+  },
+  {
+    id: '6',
+    email: 'maya@example.com',
+    name: 'Maya Rodriguez',
+    type: 'influencer',
+    avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face',
+    bio: 'College student in Boston documenting my coffee adventures and study sessions. Always on the hunt for the perfect latte!',
+    location: 'Boston, MA',
+    socialMedia: {
+      instagram: '@maya_studies',
+      tiktok: '@maya_coffee'
+    },
+    followers: {
+      instagram: 12000,
+      tiktok: 8000
+    },
+    engagementRate: 7.8,
+    categories: ['Coffee', 'Student Life', 'Boston', 'Study Content'],
+    priceRange: { min: 100, max: 300 },
+    verified: true,
+    audienceDemographics: {
+      gender: { female: 80, male: 20 },
+      age: { '18-24': 70, '25-34': 30 },
+      location: { 'Boston': 45, 'Massachusetts': 35, 'Other': 20 }
+    },
+    portfolio: [
+      {
+        id: 'p7',
+        title: 'Study Session at Local Cafe',
+        description: 'Productive study session with coffee and pastries',
+        imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+        platform: 'tiktok',
+        metrics: { likes: 1200, comments: 89, shares: 34 },
+        createdAt: new Date('2024-01-21')
+      }
+    ],
+    createdAt: new Date('2023-10-15')
   }
 ];
 
@@ -194,6 +270,22 @@ export const mockBrands: Brand[] = [
     description: 'Premium fitness supplements and wellness products for active lifestyles.',
     campaigns: [],
     createdAt: new Date('2023-03-01')
+  },
+  {
+    id: 'b4',
+    email: 'shea@sheascoffee.com',
+    name: 'Shea Mathew',
+    type: 'brand',
+    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
+    companyName: "Shea's Coffee Store",
+    industry: 'Food & Beverage',
+    website: 'https://sheascoffee.com',
+    description: 'Local coffee shop in Boston serving artisanal coffee and pastries. Family-owned business passionate about bringing the community together over great coffee.',
+    location: 'Boston, MA',
+    budget: 5000,
+    targetAudience: 'Young adults, coffee lovers, local community',
+    campaigns: [],
+    createdAt: new Date('2024-01-01')
   }
 ];
 
@@ -304,5 +396,25 @@ export const mockCampaigns: Campaign[] = [
     programDuration: '3 months',
     createdAt: new Date('2024-01-24'),
     deadline: new Date('2024-04-30')
+  },
+  {
+    id: 'c7',
+    title: "Shea's Coffee Store Local Marketing",
+    description: 'Promote our local Boston coffee shop to young adults who love coffee and day-in-the-life content. Perfect for micro-influencers in the Boston area.',
+    brandId: 'b4',
+    budget: 1500,
+    requirements: {
+      platforms: ['instagram', 'tiktok'],
+      categories: ['Coffee', 'Lifestyle', 'Local Boston', 'Day in the Life'],
+      followerRange: { min: 5000, max: 50000 },
+      engagementRate: 4.0
+    },
+    status: 'active',
+    applications: [],
+    matchScore: 95,
+    isLocalBusiness: true,
+    location: 'Boston, MA',
+    createdAt: new Date('2024-01-25'),
+    deadline: new Date('2024-03-15')
   }
 ];

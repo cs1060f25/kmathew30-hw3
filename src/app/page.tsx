@@ -75,15 +75,28 @@ export default function HomePage() {
 
           {/* Demo Section */}
           <div className="mt-20 mb-16">
-            <div className="card max-w-2xl mx-auto text-center">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">See Diana's Success Story</h2>
-              <p className="text-gray-600 mb-6">
-                Watch how Diana Ramirez, a micro-influencer from Miami, transformed her inconsistent income 
-                into a sustainable business with our platform.
-              </p>
-              <a href="/demo" className="btn-primary">
-                View Diana's Journey
-              </a>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="card text-center">
+                <h2 className="text-xl font-bold text-gray-900 mb-4">See Diana's Success Story</h2>
+                <p className="text-gray-600 mb-6">
+                  Watch how Diana Ramirez, a micro-influencer from Miami, transformed her inconsistent income 
+                  into a sustainable business with our platform.
+                </p>
+                <a href="/demo" className="btn-primary">
+                  View Diana's Journey
+                </a>
+              </div>
+              
+              <div className="card text-center">
+                <h2 className="text-xl font-bold text-gray-900 mb-4">Try Shea's AI Assistant</h2>
+                <p className="text-gray-600 mb-6">
+                  Experience how Shea's Coffee Store used natural language search to find perfect influencers 
+                  and increased sales by 250% with AI automation.
+                </p>
+                <a href="/shea" className="btn-primary">
+                  Try AI Search
+                </a>
+              </div>
             </div>
           </div>
 
@@ -140,7 +153,7 @@ function BrandDashboard() {
               <span className="ml-2 text-2xl font-bold text-gray-900">InfluenceHub</span>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="text-gray-600">Welcome, TechCorp</span>
+              <span className="text-gray-600">Welcome, Shea's Coffee Store</span>
               <a href="/campaigns/create" className="btn-primary">Create Campaign</a>
             </div>
           </div>
@@ -150,7 +163,7 @@ function BrandDashboard() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Brand Dashboard</h1>
-          <p className="text-gray-600">Manage your campaigns and discover influencers</p>
+          <p className="text-gray-600">Manage your campaigns and discover influencers with AI assistance</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
@@ -161,12 +174,12 @@ function BrandDashboard() {
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg p-4">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="font-medium text-gray-900">TechCorp Smartphone Launch</h3>
+                    <h3 className="font-medium text-gray-900">Shea's Coffee Store Local Marketing</h3>
                     <span className="text-sm text-green-600 bg-green-100 px-2 py-1 rounded">Active</span>
                   </div>
-                  <p className="text-gray-600 text-sm mb-2">Promote our latest smartphone with focus on camera features</p>
+                  <p className="text-gray-600 text-sm mb-2">Promote our local Boston coffee shop to young adults who love coffee</p>
                   <div className="flex justify-between text-sm text-gray-500">
-                    <span>Budget: $50,000</span>
+                    <span>Budget: $1,500</span>
                     <span>Deadline: Mar 15, 2024</span>
                   </div>
                 </div>
@@ -178,14 +191,14 @@ function BrandDashboard() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4 p-4 border border-gray-200 rounded-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" 
-                    alt="Mike Chen" 
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&h=60&fit=crop&crop=face" 
+                    alt="Sophia Chen" 
                     className="w-12 h-12 rounded-full"
                   />
                   <div className="flex-1">
-                    <h3 className="font-medium text-gray-900">Mike Chen</h3>
-                    <p className="text-sm text-gray-600">Tech reviewer • 200K YouTube followers</p>
-                    <p className="text-sm text-gray-500">Engagement: 6.8% • Price: $1,000-$5,000</p>
+                    <h3 className="font-medium text-gray-900">Sophia Chen</h3>
+                    <p className="text-sm text-gray-600">Coffee lifestyle • 18K Instagram followers</p>
+                    <p className="text-sm text-gray-500">Engagement: 6.2% • Price: $150-$400</p>
                   </div>
                   <a href="/messages" className="btn-primary text-sm">Connect</a>
                 </div>
@@ -204,11 +217,11 @@ function BrandDashboard() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Total Spent</span>
-                  <span className="font-medium">$12,500</span>
+                  <span className="font-medium">$1,500</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Connections</span>
-                  <span className="font-medium">8</span>
+                  <span className="font-medium">3</span>
                 </div>
               </div>
             </div>
@@ -218,11 +231,11 @@ function BrandDashboard() {
               <div className="space-y-3 text-sm">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-600">New application from Sarah Johnson</span>
+                  <span className="text-gray-600">New application from Sophia Chen</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-600">Campaign "Spring Collection" launched</span>
+                  <span className="text-gray-600">Sales increased 250% this month!</span>
                 </div>
               </div>
             </div>

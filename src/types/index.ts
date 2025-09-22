@@ -44,6 +44,9 @@ export interface Brand extends User {
   industry: string;
   website?: string;
   description: string;
+  location?: string;
+  budget?: number;
+  targetAudience?: string;
   campaigns: Campaign[];
 }
 
@@ -84,6 +87,8 @@ export interface Campaign {
   matchScore?: number;
   isAmbassadorProgram?: boolean;
   programDuration?: string;
+  isLocalBusiness?: boolean;
+  location?: string;
 }
 
 export interface CampaignApplication {
