@@ -75,7 +75,7 @@ export default function ProfilePage() {
             <div className="card">
               <h2 className="text-xl font-semibold text-gray-900 mb-6">Social Media Presence</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                {Object.entries(influencer.followers).map(([platform, count]) => {
+                {Object.entries(influencer.followers || {}).map(([platform, count]) => {
                   if (!count) return null;
                   
                   const platformIcons = {
@@ -85,6 +85,8 @@ export default function ProfilePage() {
                   };
                   
                   const Icon = platformIcons[platform as keyof typeof platformIcons];
+                  
+                  if (!Icon) return null;
                   
                   return (
                     <div key={platform} className="flex items-center space-x-4 p-4 border border-gray-200 rounded-lg">
@@ -185,7 +187,7 @@ export default function ProfilePage() {
             <div className="card">
               <h3 className="font-semibold text-gray-900 mb-4">Social Links</h3>
               <div className="space-y-2">
-                {Object.entries(influencer.socialMedia).map(([platform, handle]) => {
+                {Object.entries(influencer.socialMedia || {}).map(([platform, handle]) => {
                   if (!handle) return null;
                   
                   const platformIcons = {
@@ -195,6 +197,8 @@ export default function ProfilePage() {
                   };
                   
                   const Icon = platformIcons[platform as keyof typeof platformIcons];
+                  
+                  if (!Icon) return null;
                   
                   return (
                     <a
