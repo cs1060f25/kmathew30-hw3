@@ -1,5 +1,10 @@
 # Brandley.ai - Influencer Marketing Platform
 
+**Author:** Kevin Mathew  
+**GitHub:** [kmathew30](https://github.com/kmathew30)  
+**Live Demo:** [https://brandley.netlify.app/](https://brandley.netlify.app/)  
+**PRD:** [https://docs.google.com/document/d/1QCcoxMiU9BizNBYnl78BTsQUZtvX8p3US0H82xPmmAs/edit?usp=sharing](https://docs.google.com/document/d/1QCcoxMiU9BizNBYnl78BTsQUZtvX8p3US0H82xPmmAs/edit?usp=sharing)
+
 A modern 2-sided platform that connects brands with influencers for authentic marketing partnerships.
 
 ## 🚀 Features
